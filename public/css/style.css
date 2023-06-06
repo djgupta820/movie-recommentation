@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    min-height: 50px;
+    background-color: rgb(43, 40, 40);
+    
+}
+form{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+#q{
+    width: 40%;
+    height: 2em;
+    font-size: 1em;
+    padding: 0.2em;
+    outline: none;
+}
+#movies{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 2em;
+}
+.movie{
+    margin: 0.5em;
+}
