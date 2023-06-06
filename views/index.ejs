@@ -9,10 +9,20 @@
 </head>
 <body>
     <header>
-        <form action="" method="get">
+        <form action="" method="post">
             <input type="search" name="q" id="q" placeholder="search here...">
         </form>
     </header>
-    <section id="movies"> 1 </section>
+    <section id="movies">
+        <% if(movies.lenght > 0){ %>
+            <% for(let movie of movies){ %>
+                <div class="movie">
+                    <h1><%= movie.show.name %></h1>
+                    <p>Runtime: <%= movie.show.runtime %> </p>
+                    <p>Premiered: <% movie.show.premiered %> </p>
+                    <img src="<%= movie.show.image.medium %>" alt="movie-image">
+                </div>    
+        <% }} %>    
+    </section>
 </body>
 </html>
